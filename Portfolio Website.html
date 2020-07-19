@@ -1,114 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--HEAD-->
-    <head>
-        <meta charset="UTF-8">
-        <title>Yao Chan Saechao</title>
-        <link rel="stylesheet" href="./css/Pfinal.css">
-    </head>
-    <br>
-    <br>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yao Chan Saechao</title>
+    <link rel="stylesheet" href="./css/Pfinal.css">
+</head>
+<br>
+<br>
 <!--BODY-->
-    <div class="Background">
-<!--NAV-->
+<div class="Background">
+    <!--NAV-->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
+        <a href="Slideshow">Slideshow</a> <!-- New section-->
         <a href="#About">About</a>
         <a href="#Github">Github</a>
-        <a href="#Contact">Contact</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </div>
 
-<!--HOME-->
-        <br>
-        <br>
+    <!--HOME-->
+    <div id="Home">
+    <br>
+    <br>
 
-<!--VIDEO-->
-        <div id="Home">
-            <video autoplay muted loop id="Typing_Video">
-                <source src="./Stylesheet/Video/Typing.mp4" type="video/mp4">
-                 Your browser does not support HTML5 video.   
-            </video>
-        </div>
+    <!--VIDEO-->
+    <video autoplay muted loop id="Typing_Video">
+        <source src="./Stylesheet/Video/Typing.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+</div>
 
 <!--VIDEO TEXT-->
-        <div class="Video_Text">
-            <h1 style="color:seagreen">Yao Chan's Portfolio</h1>
-                <p>
-                    <strong>
-                        <center>
-                            <q>Coding is today's language of creativity.
-                            <br> All our children deserve a chance to become
-                            <br> creators instead of consumers of computer science.
-                            </q>
-                            <br>-Maria Klawe<br>
-                            <br>
-                            Hello, My name is Yao Chan S. Welcome to my portfolio page! 
-                            <br>This page will show you a bit about me and some projects that I have worked on.
-                            <br>If you have any comments or suggestion please feel free to contact me.
-                            <br>Thank you for stopping by and I hope you enjoyed!
-                        </center>
-                    </strong>
-                </p> 
-          </div>
-  <!--ABOUT SECTION-->
-          <div class="Row" id="About">
-              <div class="Column_2"><!--Left side-->
-                <img src="./img/Computer.jpg"  alt="computer" class="center">
-          </div>
+<div class="Video_Text">
+    <h1 style="color:seagreen">Yao Chan's Portfolio</h1>
+    <p>
+        <strong>
+            <center>
+                <q>Coding is today's language of creativity.
+                    <br> All our children deserve a chance to become
+                    <br> creators instead of consumers of computer science.
+                </q>
+                <br>-Maria Klawe<br>
+                <br>
+                Hello, My name is Yao Chan S. Welcome to my portfolio page!
+                <br>This page will show you a bit about me and some projects that I have worked on.
+                <br>If you have any comments or suggestion please feel free to contact me.
+                <br>Thank you for stopping by and I hope you enjoyed!
+            </center>
+        </strong>
+    </p>
+</div>
 
-          <div class="Column_1"> <!--Right-->
-            <h1>About</h1>
-                <p>I am a software developer who enjoys learning and creating.
-                I dabbled in a bit of coding before researching and ultimately enrolling, and completing the Software developer bootcamp at The Tech Academy.
-                There I gained knowledge and experience in the following web and programming language: HTML,CSS, Javascript, SQL, C# and more. Upon completion I became a Full-stack developer.
-                <br>
-                <br>
-                Aside from coding,I'm a big believer of always challenging yourself and growing.
-                Growing isn't always a solo journey, you have opportunites to learn from each person
-                you meet. With that being said I also have a team oriented mindset as well.
-                <br>
-                <br>
-                I am open to different opportunities of creating and collaborating so please
-                feel free to contact me and lets further expand our mindsets!    
-                </p>
-          </div>
-        </div>
-    <!--GITHUB SECTION-->    
-        <div class="Row" id="Github">
-            <div class="Column_1"> <!--left-->
-                <h1>Github</h1>
-                    <p><center>Feel Free to view some of my projects on my Github here:</p></center>
-                    <center><a href="https://github.com/ysaechao30" target="_blank">Github</a></center>
-                </div>
 
-                <div class="Column_2"> <!--Right-->
-                    <a href="http://github.com/ysaechao30" target="_blank"><img src="Stylesheet/Images/Github.png" alt="Github" class="center"></a>
-                </div>  
-             </div>
-    <!--CONTACT SECTION-->   
-        <div class="Row" id="Contact">
-            <div class="Column_3"> <!--contact Image Left-->
-            <img src="./Stylesheet/Images/Contact.jpg" alt="Contact_Image" class="center">
+<!-- Slideshow section -->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 6</div>
+            <img class="Slide_Show_Images" src="Stylesheet/Images/Picture_of_You.jpg" style="width:100%">
+              <div class="text">I'm available to assist you on your project!</div>
         </div>
         
-        <div class="Column_1"> <!--Contact form right-->
-            <h1>Contact</h1>
-                <form action="mailto:ysaechao30@gmail.com" method="get">
-                    <label>Name:</label>
-						<input type="text" placeholder="Please enter your name here">
-					<label>Email:</label>
-						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-					<label>Message:</label>
-						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
-						<input type="submit" value="Send Email">
-                </form>
-            </div>
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 6</div>
+            <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
         </div>
-    <!--FOOTER SECTION-->
-    <footer>
-        <p>
-            <center>&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a></center>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">3 / 6</div>
+            <img class="Slide_Show_Images" src="Stylesheet/Images/Python.png" style="width:100%">
+              <div class="text">the popular programming language Python,</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="Slide_Number">4 / 6</div>
+            <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width:100%">
+              <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+        </div>
+
+		<div class="mySlides fade">
+	      <div class="Slide_Number">5 / 6</div>
+			<img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%">
+              <div class="text">back end development, databases and SQL.</div>
+			</div>
+
+		<div class="mySlides fade">
+		  <div class="Slide_Number">6 / 6</div>
+			<img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+			  <div class="text"> 
+				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+			  </div>
+	    </div>
+	
+		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span> 
+
+      </div>
+    </div>
+  </div>
+  
+<!--ABOUT SECTION-->
+<div class="Row" id="About">
+    <div class="Column_2"><!--Left side-->
+        <img src="./img/Computer.jpg" alt="computer">
+    </div>
+
+    <div class="Column_1">
+        <!--Right-->
+        <h1>About</h1>
+        <p>I am a software developer who enjoys learning and creating.
+           I dabbled in a bit of coding before researching and ultimately enrolling, and completing the Software
+            developer bootcamp at The Tech Academy.
+           There I gained knowledge and experience in the following web and programming language: HTML,CSS, Javascript,
+            SQL, C# and more. Upon completion I became a Full-stack developer.
+            <br><br>I am also a strong believer that there is always room for progression and knowlege, so if there are any individuals that would
+            like to collaborte please feel free to contact me!
+            <br><br>
         </p>
-    </footer>
-    </body>
+    </div>
+</div>
+<!--GITHUB SECTION-->
+<div class="Row" id="Github">
+    <div class="Column_1">
+        <!--left-->
+        <h1>Github</h1>
+        <p>
+            <center>Feel Free to view some of my projects on my Github here:
+        </p>
+        </center>
+        <center><a href="https://github.com/ysaechao30" target="_blank">Github</a></center>
+    </div>
+
+    <div class="Column_2">
+        <!--Right-->
+        <a href="http://github.com/ysaechao30" target="_blank"><img src="Stylesheet/Images/Github.png" alt="Github"
+                class="center"></a>
+    </div>
+</div>
+<!-- Contact section -->
+<div id="Contact"> 
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+	  <div class="form-popup" id="myForm">
+	    <form action="mailto:ysaechao30@gmail.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+		<h1>Contact</h1>
+			<label for="name"><b>Name</b></label>
+			  <input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone</b></label>
+			  <input type="text" placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>		
+			  <input type="text" placeholder="Type your email address here" name="email" required>
+			<label for="message"><b>Message</b></label>
+			  <input type="text" placeholder="Type your message here" name="message">
+ 
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+	    </form>
+	  </div>
+  </div>
+<!--FOOTER SECTION-->
+<footer>
+    <p>
+        <center>&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a></center>
+    </p>
+</footer>
+
+<script src="JS/Portfolio_Final.js"></script>
+
+</body>
 </html>
