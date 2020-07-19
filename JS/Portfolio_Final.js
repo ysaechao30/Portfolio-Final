@@ -14,7 +14,7 @@ function closeForm() {
 var slideIndex = 1;
   showSlides(slideIndex);
 function plusSlides(n) {
-  showSlides(slideInd   ex += n);
+  showSlides(slideIndex += n);
 }
 function currentSlide(n) {
   showSlides(slideIndex = n);
